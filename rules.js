@@ -299,12 +299,8 @@ module.exports = function (styles, opts = {}) {
           }, output(node.content, state));
           state.withinParagraphWithImage = false;
           return paragraph;
-        } else if (size(node.content) < 3 && some(node.content, {type: 'strong'})) {
-          // align to center for Strong only content
-          // require a check of content array size below 3,
-          // as parse will include additional space as `text`
-          paragraphStyle = styles.paragraphCenter;
         }
+
         if (state.withinList) {
           paragraphStyle = [paragraphStyle, styles.noMargin];
         }
@@ -318,8 +314,8 @@ module.exports = function (styles, opts = {}) {
       react: function (node, output, {...state}) {
         state.withinText = true;
         state.style = {
+          ...styles.strong,
           ...(state.style || {}),
-          ...styles.strong
         };
         return React.createElement(Text, {
           key: state.key,

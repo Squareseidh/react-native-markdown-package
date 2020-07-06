@@ -33,7 +33,6 @@ export default StyleSheet.create({
     alignSelf: 'stretch',
   },
   codeBlock: {
-    fontFamily: Platform.OS === 'ios' ? 'Courier' : 'Monospace',
     fontWeight: '500',
     backgroundColor: '#DDDDDD',
   },
@@ -42,10 +41,8 @@ export default StyleSheet.create({
     textDecorationStyle: 'solid'
   },
   em: {
-    fontStyle: 'italic',
   },
   heading: {
-    fontWeight: '200',
   },
   heading1: {
     fontSize: 32,
@@ -84,8 +81,6 @@ export default StyleSheet.create({
     borderColor: '#dddddd',
     borderRadius: 3,
     borderWidth: 1,
-    fontFamily: Platform.OS === 'ios' ? 'Courier' : 'Monospace',
-    fontWeight: 'bold',
   },
   list: {
   },
@@ -98,14 +93,12 @@ export default StyleSheet.create({
   },
   listItemText: {
     flex: 1,
-
   },
   listItemBullet: {
     fontSize: 20,
     lineHeight: 20,
   },
   listItemNumber: {
-    fontWeight: 'bold',
   },
   listRow: {
     flexDirection: 'row',
@@ -117,15 +110,6 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
-  },
-  paragraphCenter: {
-    marginTop: 10,
-    marginBottom: 10,
-    flexWrap: 'wrap',
-    flexDirection: 'row',
-    textAlign: 'center',
-    alignItems: 'flex-start',
-    justifyContent: 'center',
   },
   paragraphWithImage: {
     flex: 1,
