@@ -7,7 +7,7 @@ React Native Markdown Package is a library for implementing markdown syntax in R
 
 To install this library, you can easily run this command from your project folder.
 
-    `npm i react-native-markdown-package --save`
+    `npm i @squareseidh/react-native-markdown-package --save`
 
 
 Check this simple app for implementation example [Example app](https://github.com/andangrd/rn-markdown-example)
@@ -16,7 +16,7 @@ Check this simple app for implementation example [Example app](https://github.co
 
 ## How to use
 
-What you need to do is `import` the `react-native-markdown-package` module and then use the
+What you need to do is `import` the `@squareseidh/react-native-markdown-package` module and then use the
 `<Markdown/>` tag.
 
 How to use? 
