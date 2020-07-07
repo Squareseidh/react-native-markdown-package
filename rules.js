@@ -314,8 +314,8 @@ module.exports = function (styles, opts = {}) {
       react: function (node, output, {...state}) {
         state.withinText = true;
         state.style = {
-          ...styles.strong,
           ...(state.style || {}),
+          ...styles.strong,
         };
         return React.createElement(Text, {
           key: state.key,

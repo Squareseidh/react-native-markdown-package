@@ -33,7 +33,6 @@ export default StyleSheet.create({
     alignSelf: 'stretch',
   },
   codeBlock: {
-    fontWeight: '500',
     backgroundColor: '#DDDDDD',
   },
   del: {
@@ -123,7 +122,6 @@ export default StyleSheet.create({
     marginBottom: 0,
   },
   strong: {
-    fontWeight: 'bold',
   },
   table: {
     borderWidth: 1,
@@ -137,7 +135,6 @@ export default StyleSheet.create({
   },
   tableHeaderCell: {
     color: '#ffffff',
-    fontWeight: 'bold',
     padding: 5,
   },
   tableRow: {
